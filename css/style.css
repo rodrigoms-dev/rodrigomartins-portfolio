@@ -1,0 +1,343 @@
+
+/*Config Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #8e3939;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #8e3939;
+    color: #ffffff;
+    z-index: 100;
+    border-bottom: 2px solid;
+}
+
+.menu {
+    display: flex;
+    gap: 45px;
+}
+
+.menu-item {
+    color: #ffffff;
+    font-size: 130%;
+    white-space: nowrap;
+}
+
+/* Todo Conteúdo / Main */
+.conteudo {
+    margin-bottom: 50px;
+    border-top: 0.3px solid #ffffff;
+}
+
+/* Seção de Inicio */
+.inicio {
+    
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-around;
+    
+}
+
+.inicio-img {
+    max-width: 100%;
+    height: auto;
+    width: 390px;
+}
+
+.inicio-titulo {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.inicio-botao {
+    background-color: #070c2c;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 2px 2px 5px #000000;
+    font-size: 14px;
+}
+
+/* Todos paragrafos da pagina */
+.paragrafo {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #a1a1a1;
+}
+
+/* Seção Sobre-mim */
+.sobre {
+    margin-top: 150px;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 30%; 
+}
+
+/* Subtitulo Geral */
+.subtitulo {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* Seção de Formação e Idiomas */
+.formacao {
+    padding-top: 150px;
+    margin-left: 10%;
+    margin-right: 30%;
+    
+}
+
+/* Seção de Portfólio */
+.portfolio {
+
+    padding-top: 150px;
+    margin-left: 10%;
+
+
+}
+
+.projetos {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.projeto {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 250px; 
+    height: 250px;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+.projeto h3 {
+    margin-top: 0;
+}
+
+.projeto p {
+    margin-bottom: 0;
+}
+
+.projeto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção para entrar em Contato */
+.contato {
+    padding-top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.form-item {
+    margin-top: 30px; 
+}
+
+.form-area {
+    border-radius: 5px;
+    font-size: 20px;
+    height: 40px;
+    width: 450px;
+}
+
+.msg-area {
+    border-radius: 5px;
+    font-size: 20px;
+    resize: none;
+    height: 100px;
+    width: 450px;
+}
+
+.botao-enviar {
+    background-color: #070c2c;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 2px 2px 5px #000000;
+    font-size: 14px;
+}
+
+/* Remove a margem de foco ao clicar em um input ou textarea para fins de estilo. */
+input:focus, textarea:focus {
+    outline: none;
+}
+
+footer {
+    border-top: 2px solid #ffffff; 
+    color: #fff; 
+    padding: 20px; 
+    height: 60px;
+    text-align: center;
+}
+
+
+
+/*Ajuste responsividade 01*/
+
+@media (max-width: 1000px) {
+   
+
+    .inicio {
+        margin-left: 5%;
+        margin-right: 5%;  
+    }
+    .inicio-img {
+        width: 270px;
+    }
+
+    .inicio-titulo {
+        font-size: 40px;
+    }
+    
+    .paragrafo {
+        font-size: 20px;
+    }
+
+    .sobre {
+        margin-top: 80px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .formacao {
+        padding-top: 80px;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+    .portfolio {
+        padding-top: 80px;
+        margin-left: 5%;
+    
+    }
+
+    .projeto {
+        width: 130px; 
+        height: 130px; 
+    }
+
+    .contato {
+        padding-top: 80px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .form-area {
+        max-width: 100%;
+        font-size: 20px;
+        height: 30px;
+        width: 300px;
+        font-size: 15px; 
+    }
+    
+    .msg-area {
+        max-width: 100%;
+        font-size: 20px;
+        height: 90px;
+        width: 300px;
+        font-size: 15px;
+    }  
+
+
+}
+
+/*Ajuste Responsividade 02*/
+
+@media (max-width: 650px) {
+   
+    .menu {
+        gap: 24px; 
+    }
+    
+    .menu-item {
+        font-size: 90%;
+    
+    }
+
+    .inicio-img {
+        width: 170px;
+    }
+
+    .inicio-titulo {
+        font-size: 30px;
+    }
+    
+    .paragrafo {
+        font-size: 15px;
+    }
+    
+    .inicio-botao {
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+    }
+      
+    .portfolio {
+        margin-left: 5%;
+    
+    }
+    
+    .botao-enviar {
+        width: 100px;
+        height: 30px;
+        font-size: 13px;   
+    } 
+    
+    footer {
+        font-size: 70%; 
+        padding: 20px; 
+        height: 60px;
+        
+    }  
+}
+
+/*Ajuste de Responsividade 03*/
+@media (max-width: 435px) {
+
+    .inicio {
+        padding-top: 70px;
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column-reverse;
+        
+        
+    }
+   
+}
+

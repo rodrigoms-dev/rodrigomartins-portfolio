@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Martins | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
-        <a href="" class="logo">rodrigoms.<span class="logo-dev">dev</span></a>
-        
-        <nav class="navbar">
-            <a href="">Início</a>
-            <a href="">Sobre mim</a>
-            <a href="">Projetos</a>
-            <a href="">Contato</a> 
+        <a href="" class="header__logo">rodrigoms.<span class="header__logo-dev">dev</span></a>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-list">
+                    <a href="">Início</a>
+                </li>
+                <li class="header__menu-list">
+                    <a href="">Sobre mim</a>
+                </li>
+                <li class="header__menu-list">
+                    <a href="">Projetos</a>
+                </li>
+                <li class="header__menu-list">
+                    <a href="">Contato</a>
+                </li>            
+            </ul>
         </nav>
     </header>
-
     <section class="home">
-        <div class="home-content">
-            <h3>Olá, meu nome é</h3>
-            <h1>Rodrigo Martins</h1>
-            <h1 class="input"></h1>
-            <p>Sou um desenvolvedor em formação, atualmente em busca da minha primeira oportunidade na área. Aqui você encontrará alguns dos meus projetos, que abrangem programação web, microcontroladores (Arduino) e também Python.</p>
-            <div class="buttons">
-                <a href="">Download CV</a>
-                <a href="mailto:contatorodrigoms@outlook.com">Entre em contato</a>
-            </div>
+        <div class="home__content">
+            <h1 class="home__title">Rodrigo Martins</h1>
+            <p class="home__job">Programador Full-Stack</p>
+            <p class="home__bio">Olá, sou um desenvolvedor em formação, atualmente em busca da minha primeira oportunidade na área. Aqui você encontrará alguns dos meus projetos, que abrangem programação web, microcontroladores (Arduino) e também Python.</p>
+
+            <div class="home__buttons">
+                <a href="" class="home__button home__button-cv">Download CV</a>
+                <a href="" class="home__button home__button-contact">Entre em contato</a>
+            </div>    
         </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+        <!-- scripts -->
+        <script src="js/typing_efect.js"></script>
+        
 </body>
 </html>
